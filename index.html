@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEBPAGE</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+      
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+<section id="homepage">
+<img src="logo.jpeg" class="logo">
+<div class="homepage-text">
+    <h1>LS Traineeship</h1>
+    <p>You don't have to be great to start</p>
+</div>
+</section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#feature">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menu.png" id="menu">
+</div>
+
+<!--features-->
+<section id="feature">
+<div class="title-text">
+<p> FEATURES </p>
+<h1>Why Choose Us?</h1>
+</div>
+<div class="feature-box">
+<div class="features">
+<h1>Experienced Staff</h1>
+   <div class="features-desc">
+      <div class="feature-icon">
+        <i class="fa fa-shield"></i> 
+      </div>
+      <div class="feature-text">
+          <p>
+              We train students on technical and soft skills by Industry Experts.
+          </p>
+      </div>
+   </div>
+
+   <h1>Internships</h1>
+   <div class="features-desc">
+      <div class="feature-icon">
+        <i class="fa fa-briefcase"></i> 
+      </div>
+      <div class="feature-text">
+          <p>
+              LS Traineeship offers it's students with the best Internships.
+          </p>
+      </div>
+      </div>
+
+      <h1>Projects</h1>
+   <div class="features-desc">
+      <div class="feature-icon">
+        <i class="fa fa-industry"></i> 
+      </div>
+      <div class="feature-text">
+          <p>
+              Students will get to learn and work on live Projects.
+          </p>
+      </div>
+      </div>
+
+   
+
+</div>
+         <div class="features-img">
+         <img src="image2.jpg">
+         </div>
+
+</div>
+
+</section>
+<!--Service-->
+<section id="service">
+    <div class="title-text">
+    <p>SERVICES</p>
+    <h1>We Provide Better!</h1>
+</div>
+<div class="service-box">
+    <div class="single-service">
+        <img src="image10.png">
+        <div class="overlay"></div>
+        <div class="service-desc">
+    <h3> Expert training</h3>
+    <hr>
+    <p>Students are trained not only on technical skills but also on soft skills by industry experts</p>
+        </div>
+    
+    </div>
+    <div class="single-service">
+        <img src="image8.jpg">
+        <div class="overlay"></div> 
+        <div class="service-desc">
+            <h3> Hands on Working </h3>
+            <hr>
+            <p>Students get a lot of chances to learn and work on live projects and we also offer them the best internships.</p>
+                </div>
+    </div>
+    <div class="single-service">
+        <img src="image13.jpg">
+        <div class="overlay"></div> 
+        <div class="service-desc">
+            <h3>Time</h3>
+            <hr>
+            <p>The courses can be accessed by the students for their life time</p>
+                </div>
+    </div>
+    <div class="single-service">
+        <img src="image12.jpg">
+        <div class="overlay"></div> 
+        <div class="service-desc">
+            <h3> Cost </h3>
+            <hr>
+            <p>LS Traineeship provides its best services at a very resonable price </p>
+                </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<section id="footer">
+    <img src="image14.jpg" class="footer-img">
+    <div class="title-text">
+    <p>CONTACT</p>
+    <h1>Contact Us Any Time</h1>
+    </div>
+<div class="footer-row">
+<div class="footer-left">
+    <h1>Operating hours</h1>
+    <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+    <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 9am to 12pm</p>
+</div>
+<div class="footer-right">
+    <h1>Get in touch</h1>
+    <p>sanjanaloganathan21@gmail.com<i class="fa fa-paper-plane"></i></p>
+    <p> _sanjana_loganathan<i class="fa fa-instagram"></i></p>
+    <p> Sanjana Loganathan<i class="fa fa-facebook"></i></p>
+</div>
+</div>
+
+<div class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-youtube-play"></i>
+    <p> Copyright LS Traineeship</p>
+</div>
+</section>
+
+</section>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    
+    sideNav.style.right = "-180px";
+    
+    menuBtn.onclick = function(){
+     if(sideNav.style.right == "-180px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png";
+     }
+     else{
+        sideNav.style.right = "-180px";
+        menu.src = "menu.png";
+     }
+ }
+
+ var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+
+</body>
+</html>
